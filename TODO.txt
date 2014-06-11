@@ -1,0 +1,44 @@
+TODO LIST
+------------------------------------------------------------------------------------------------------------------------------------
+Must have
+
+1. Customer management system
+    a. Make it archive customers
+2. Error message on incorrect date (out of range) selection
+3. Eval Tests
+4. IE page rendering issue
+5. Github Pull working somehow
+6. Write a handover document with passwords, advice on github etc.
+
+Should Have
+
+Could have
+1. Customer Logo on members page 
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+Completed
+1. Added sensible greeting to interface.html
+    a. changed interface.html to interface.html.php to enable PHP scripting
+2. Added Date and Time inputs
+3. Cookie Notice
+4. Added SQL query to bring back images table data
+    a. Created diplay <DIV> for image data
+    b. Pull client specific data to display (INNER JOIN).
+    c. Dropped SQL while working on $_SESSION variables to store the user selection from the forms, form now outputs user selected date and time.
+5. Fixed display images by name (Thanks Elliot).
+6. Prototype Interface
+    a. Fix select time Select option
+7. Client management system
+    a. Must manage adding folders to clients, "-" is user as a seperater.
+8. Only lists cameras from that project.
+9. Only lists times from that project
+10. Displayed image in interface needs to fit screen then 1:1 when clicked
+11. Go through every script and page and comment them properly
+	a. Make professional
+12. Privacy notice pop up in a window that clicks away
+	a. Re-direct from main privacy page
+13. Test schedule
