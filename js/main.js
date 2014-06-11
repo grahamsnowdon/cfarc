@@ -104,6 +104,8 @@ $(document).ready(function(){
             if (oXHR){
                 oXHR.abort();
             }
+            $("#output").attr("");
+            $("#output").attr("Loading please wait");
             var $form = $('#timeSel');
             var $inputs = $form.find("input, select, button, textarea");
             var cfTime = $('#selTime').val();
