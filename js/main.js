@@ -75,6 +75,31 @@ $(document).ready(function(){
         $('#message').html('now click the required camera');
         });
         //When the user selects the camera send an ajax request to populate the image time selector
+        $("#cam").focus(function camChangeFocus(){
+            $('#output').hide();
+            $('#selTime').hide();
+            if (oXHR){
+                oXHR.abort();
+            }
+            var cfCam = $('#cam').val();
+            document.cookie="selCam="+cfCam;
+            var $form = $('#timeSel');
+            var $inputs = $form.find("input, select, button, textarea, text");
+            var serializedData = $form.serialize();
+            oXHR = $.ajax({
+                url: "fetch_times.php",
+                type: "post",
+                data: serializedData
+                });
+            oXHR.done(function(response, textStatus, jqXHR){
+                $("#selTime").html(response);
+                $('#selTime').show();
+                });
+            oXHR.fail(function (jqXHR, textStatus, errorThrown){
+                console.error("The following error occured: "+textStatus, errorThrown);
+                });
+            $('#message').html('now select the time you want');
+        });
         $("#cam").change(function camChange(){
             $('#output').hide();
             $('#selTime').hide();
