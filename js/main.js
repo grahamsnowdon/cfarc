@@ -31,7 +31,7 @@ $(document).ready(function(){
         $('#cam').hide();
         $('#selTime').hide();
         //display instructions to the user
-        $('#message').html('please enter date in YYYY/MM/DD format, then click anywhere else');
+        $('#message').html('please select a date');
         //create a variable for the AJAX call
         var oXHR;
         //detect the date change and make AJAX call
