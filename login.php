@@ -60,10 +60,11 @@ else{
  <!DOCTYPE html>
  <html>
  <head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
-    <script src="js/vendor/modernizer-2.6.2.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css"><!--Stylesheet loaded last to make previous versions of IE work-->
+    <!--Stylesheet loaded last to make previous versions of IE work-->
  </head>
  <body>
  	<?php

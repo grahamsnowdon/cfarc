@@ -35,6 +35,7 @@ $(document).ready(function(){
         //create a variable for the AJAX call
         var oXHR;
         //detect the date change and make AJAX call
+        $('#imageDate').datepicker({dateFormat:"yy/mm/dd"});
         $("#imageDate").change(function(event){
             $('#output').hide();
             $('#cam').hide();
@@ -45,7 +46,7 @@ $(document).ready(function(){
             }
             //variables for the form
             var $form = $('#timeSel');
-            var $inputs = $form.find("input, select, button, textarea");
+            var $inputs = $form.find("input, select, button, textarea, text");
             var serializedData = $form.serialize();
             //disable the inputs while making the call
             $inputs.prop("disabled", true);
@@ -83,7 +84,7 @@ $(document).ready(function(){
             var cfCam = $('#cam').val();
             document.cookie="selCam="+cfCam;
             var $form = $('#timeSel');
-            var $inputs = $form.find("input, select, button, textarea");
+            var $inputs = $form.find("input, select, button, textarea, text");
             var serializedData = $form.serialize();
             oXHR = $.ajax({
                 url: "fetch_times.php",
@@ -106,7 +107,7 @@ $(document).ready(function(){
                 oXHR.abort();
             }
             var $form = $('#timeSel');
-            var $inputs = $form.find("input, select, button, textarea");
+            var $inputs = $form.find("input, select, button, textarea, text");
             var cfTime = $('#selTime').val();
             document.cookie="selTime="+cfTime;
             var serializedData = cfTime;
