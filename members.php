@@ -13,7 +13,7 @@ if(isset($_COOKIE['cfarcusr'])){
                 } 
         //otherwise they are given the interface     
                 else{
-                    echo "<div id='nav'><a href='logout.php'><button name='lg-logout'>logout</button></a></div>";
+                    echo "<div id='nav'><a href='logout.php'><button name='lg-logout' value='logout'>Logout</button></a></div>";
                     include 'interface.html.php';
                 } 
         } 

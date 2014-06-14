@@ -60,6 +60,9 @@ else{
  <!DOCTYPE html>
  <html>
  <head>
+ <!--[if lt IE 8]>  
+<script type="text/javascript" src="js/ie7.js"></script>  
+<![endif]-->  
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -89,7 +92,7 @@ else{
 			    <tr><td>Password</td>
 			    	<td><input type="password" name="pass" value="" maxlength="50"></td></tr>
 			    <tr><td class='smlTD' colspan="2" align="right"><!--<a href="mailto:anthony@constructfilms.co.uk?subject=Forgotten Password">Forgotten login details?</a>--></td></tr>
-			    <tr><td colspan="2" align="right"><button name="lg-submit" value="Login">Login</button></td></tr>
+			    <tr><td colspan="2" align="right"><button name="lg-submit" value="lg-submit">Login</button></td></tr>
 		      </table>
              <!-- <span class='smlTD'>Go to <a href='http://www.constructfilms.co.uk'>Construct Films main website</a></span><!--As per wireframes -->
        </form>
